@@ -1,0 +1,218 @@
+%-------------------------
+% Resume in Latex
+% Author : Ramakant Soni
+% Based off of: https://github.com/Ramakant849/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Ramakant Soni} \\ \vspace{1pt}
+    \small +91 9667216595 $|$ \href{ramakantmanit849@gmail.com}{\underline{ramakantmanit849@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/ramakant-soni-005598148}{\underline{linkedin.com/in/ramakant}} $|$
+    \href{https://github.com/Ramakant849}{\underline{github.com/ramakant}}
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Ambition Box}{\textit{Dec 2021 -- Present}}
+      {Senior Software Engineer}{Noida, UP}
+      \resumeItemListStart
+        \resumeItem{Revamped the whole Review Service with 20\% gain in performance of company reviews listing page leveraging \textbf{ElasticSearch}, \textbf{Aerospike} and \textbf{JAVA}}
+        \resumeItem{Migrated the existing monolith architecture to microservice, also increasing the \textbf{code quality} and \textbf{code coverage}}
+        \resumeItem{Launched a new feature called \textbf{Rewards} for better user engagement where users are rewarded based on their qualitative contributions}
+        \resumeItem{Designed and implemented \textbf{gibberish detection algorithm} that significantly improved content quality on the platform by quickly identifying and rejecting gibberish reviews}
+        \resumeItem{Enhanced couple of existing services for better user experience}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+
+    \resumeSubheading
+      {Xebia}{\textit{June 2021 - Dec 2021}}
+      {Trainee Data Engineer}{Gurgaon, Haryana}
+      \resumeItemListStart
+        \resumeItem{Added feature in a Service desk app to raise tickets using speech text converter}
+        \resumeItem{Created robust, scalable and secure APIs for web admin panel}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {NIT BHOPAL}{Bhopal, MP}
+      {Bachelor of Technology majoring in Electronics and Communication - 7.04/10}{\textit{July 2017 - April 2021}}
+    \resumeSubheading
+      {Tagore Shikshan Sansthan}{Rajasthan}
+      {Intermediate - RBSE - 85\%}{\textit{March, 2016}}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Billboard Top-100 Predictor}}{\textit{June 2020 -- July 2020}}
+          \resumeItemListStart
+            \resumeItem{This predictor takes into account the various features from the songs such as tempo, acousticness, loudness, etc.and also uses the lyrics extractor to predict whether the song is capable of going into the Billboard top 100 list or not.}
+            \resumeItem{Various Machine Learning Models are Random Forest Classifier and Logistic Regressor}
+            \resumeItem{The accuracy using Random Forest Classifier: 71\%, and F1 score: 0.732}
+            \resumeItem{The accuracy using Logistic regression: 72.6\%, and F1 score: 0.731}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Movie Recommendation System}}{\textit{June 2019 -- August 2019}}
+          \resumeItemListStart
+            \resumeItem{This system is capable of learning my watching patterns and providing me with relevant suggestions using lib pandas and Cosine Algorithm}
+            \resumeItem{This project can be further used for collaborative filtering using Machine learning with an SVM and K- Nearest Neighbors Algorithm (KNN)}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Proficient}{: Golang, JAVA, Spring Boot, MySql, ElasticSearch, Kafka} \\
+     \textbf{Familiar}{: Kibana, Micro-services, RESTful APIs, Docker, Kubernetes, Grafana, pandas, NumPy} \\
+     \textbf{Classworks}{: DBMS, Operating System (OS), Object-Oriented Programming (OOPS), LLD} \\
+    }}
+ \end{itemize}
+
+
+ 
+%
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+    \resumeSubHeadingListStart
+       \resumeItemListStart
+        \resumeItem{Mentored Interns and New Joiners in AmbitionBox and helped them in ramp-up}
+        \resumeItem{Member of Quizzers Club of NIT Bhopal for the session 2018-21 at the post of Marketing Head}
+        \resumeItem{Secured Rank in Top 1 percentile in JEE MAINS 2017 and also qualified JEE-ADVANCED 2017}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%
+\end{document}
